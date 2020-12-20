@@ -1,6 +1,0 @@
-A unidade de controle (UC), tem o comportamento padrão de atualizar o estado de execução (current_state) 
-ao fim de cada etapa. Este fluxo foi alterado, de maneira que cada caso de execução se torne responsável 
-pela atualização do estado de execução. Nesse novo fluxo, todas as instruções, exceto halt - que mantém 
-o estado em execução -, atualizam o estado para fetch novamente, dando início a uma nova instrução. 
-Ou seja, a instrução halt, ao executar, faz com que a máquina de estados fique com o estado preso no 
-ciclo de execução e somente via sinal externo de reset o processador reinicia a execução com PC=0.
