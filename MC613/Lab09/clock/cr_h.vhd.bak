@@ -1,0 +1,53 @@
+library ieee ;
+use ieee.std_logic_1164.all ;
+use ieee.std_logic_unsigned.all ;
+
+entity cr_h is
+  port ( clk : in std_logic;
+         clear, set: in std_logic;
+         in_dec, in_un : in std_logic_vector(3 downto 0)
+         dec, un : buffer std_logic_vector(3 downto 0)
+       );
+end cr_h;
+
+architecture rtl of cr_h is
+
+  component valid_h is
+    port (
+      decimal : in std_logic_vector(3 downto 0);
+      unity : in std_logic_vector(3 downto 0);
+      valid: out std_logic
+    );
+  end component;
+  
+  signal valid: std_logic;
+
+begin
+
+  v_nh: valid_h port map(in_dec, in_un, valid);
+
+  process
+  begin
+    if clk'EVENT and clk = '1' then
+
+      if clear = '1' then
+        dec <= "0000"; un <= "0000";
+      elsif set = '1' and valid = '1' then
+        dec <= in_dec; un <= in_un;
+
+      -- When unity reaches 9, reset unity and add 1 to decimal
+      elsif un = "1001" then
+        un <= "0000";
+        dec <= dec + '1';
+      -- When unity reaches 3 and decimal reaches 2, reset both
+      elsif un = "0011" then
+        if dec = "0010" then
+          dec <= "0000";
+          un <= "0000";
+        end if;
+      else
+        un <= un + '1' ;
+      end if;
+    end if;
+  end process;
+end rtl;

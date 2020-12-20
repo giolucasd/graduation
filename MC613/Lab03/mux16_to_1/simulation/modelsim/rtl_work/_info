@@ -1,0 +1,166 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelFPGA_lite/17.1/mux16_to_1/simulation/modelsim
+Edec2_to_4
+Z1 w1585166861
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8C:/intelFPGA_lite/17.1/mux16_to_1/dec2_to_4.vhd
+Z5 FC:/intelFPGA_lite/17.1/mux16_to_1/dec2_to_4.vhd
+l0
+L4
+V2F7FOXc0BX3TI`J;N];SG1
+!s100 XQ:`A^YE1CA:0cK]JlmRl3
+Z6 OV;C;10.5b;63
+31
+Z7 !s110 1585600801
+!i10b 1
+Z8 !s108 1585600801.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/intelFPGA_lite/17.1/mux16_to_1/dec2_to_4.vhd|
+Z10 !s107 C:/intelFPGA_lite/17.1/mux16_to_1/dec2_to_4.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Artl
+R2
+R3
+DEx4 work 9 dec2_to_4 0 22 2F7FOXc0BX3TI`J;N];SG1
+l10
+L9
+V4=dDI1hj`V1A_EBek_b8Y0
+!s100 ;hf3S=oH?[:A[`?V9BEZ93
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eextra_logic
+Z13 w1585170025
+R2
+R3
+R0
+Z14 8C:/intelFPGA_lite/17.1/mux16_to_1/extra_logic.vhd
+Z15 FC:/intelFPGA_lite/17.1/mux16_to_1/extra_logic.vhd
+l0
+L4
+VT4TLKl7TPLE::GJkjWfMF1
+!s100 :Tg0[:m0kj9^@W;EWoe2F0
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|C:/intelFPGA_lite/17.1/mux16_to_1/extra_logic.vhd|
+Z17 !s107 C:/intelFPGA_lite/17.1/mux16_to_1/extra_logic.vhd|
+!i113 1
+R11
+R12
+Artl
+R2
+R3
+DEx4 work 11 extra_logic 0 22 T4TLKl7TPLE::GJkjWfMF1
+l12
+L10
+V>EIlV6FE92P@a@MGnHLW40
+!s100 Q8;gR<@ZZ_XVgVlMhfn_h0
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Emux16_to_1
+Z18 w1585600641
+R2
+R3
+R0
+Z19 8C:/intelFPGA_lite/17.1/mux16_to_1/mux16_to_1.vhd
+Z20 FC:/intelFPGA_lite/17.1/mux16_to_1/mux16_to_1.vhd
+l0
+L4
+V_Ed>BVMjn^@c`DBnBE4`H0
+!s100 XR]f2YW@0=A:122mUN[;f3
+R6
+31
+R7
+!i10b 1
+R8
+Z21 !s90 -reportprogress|300|-93|-work|work|C:/intelFPGA_lite/17.1/mux16_to_1/mux16_to_1.vhd|
+Z22 !s107 C:/intelFPGA_lite/17.1/mux16_to_1/mux16_to_1.vhd|
+!i113 1
+R11
+R12
+Artl
+R2
+R3
+DEx4 work 10 mux16_to_1 0 22 _Ed>BVMjn^@c`DBnBE4`H0
+l20
+L10
+V>3UOR8_kzOg@3Gm``J1ef2
+!s100 oR4X]Eh[Y`QN6Z[2H]8NR1
+R6
+31
+R7
+!i10b 1
+R8
+R21
+R22
+!i113 1
+R11
+R12
+Emux4_to_1
+Z23 w1585600440
+R2
+R3
+R0
+Z24 8C:/intelFPGA_lite/17.1/mux16_to_1/mux4_to_1.vhd
+Z25 FC:/intelFPGA_lite/17.1/mux16_to_1/mux4_to_1.vhd
+l0
+L4
+VHm=RRfK`<EF@=8iULeHIK1
+!s100 jAVhCMfVem2<@]KGdS]653
+R6
+31
+R7
+!i10b 1
+R8
+Z26 !s90 -reportprogress|300|-93|-work|work|C:/intelFPGA_lite/17.1/mux16_to_1/mux4_to_1.vhd|
+Z27 !s107 C:/intelFPGA_lite/17.1/mux16_to_1/mux4_to_1.vhd|
+!i113 1
+R11
+R12
+Artl
+R2
+R3
+DEx4 work 9 mux4_to_1 0 22 Hm=RRfK`<EF@=8iULeHIK1
+l24
+L10
+VWGm5c[OO2:LW<n=>Qh8b00
+!s100 2zXNi1j2C4@<U<:Q4Pjlz3
+R6
+31
+R7
+!i10b 1
+R8
+R26
+R27
+!i113 1
+R11
+R12

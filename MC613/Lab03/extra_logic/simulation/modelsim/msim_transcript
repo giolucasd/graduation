@@ -1,0 +1,117 @@
+# Reading C:/intelFPGA_lite/17.1/modelsim_ase/tcl/vsim/pref.tcl
+# do extra_logic_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/17.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/intelFPGA_lite/17.1/extra_logic/extra_logic.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:48:12 on Mar 30,2020
+# vcom -reportprogress 300 -93 -work work C:/intelFPGA_lite/17.1/extra_logic/extra_logic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity extra_logic
+# -- Compiling architecture rtl of extra_logic
+# End time: 13:48:12 on Mar 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.extra_logic
+# vsim work.extra_logic 
+# Start time: 13:51:34 on Mar 30,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.extra_logic(rtl)
+wave create -driver freeze -pattern clock -initialvalue 0 -period 100ps -dutycycle 50 -starttime 0ps -endtime 800ps sim:/extra_logic/y0
+# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+wave create -driver freeze -pattern clock -initialvalue 0 -period 200ps -dutycycle 50 -starttime 0ps -endtime 800ps sim:/extra_logic/y1
+wave create -driver freeze -pattern clock -initialvalue 0 -period 400ps -dutycycle 50 -starttime 0ps -endtime 800ps sim:/extra_logic/y2
+wave create -driver freeze -pattern clock -initialvalue 0 -period 800ps -dutycycle 50 -starttime 0ps -endtime 800ps sim:/extra_logic/y3
+wave create -driver freeze -pattern clock -initialvalue 1 -period 1600ps -dutycycle 50 -starttime 0ps -endtime 800ps sim:/extra_logic/w0
+wave create -driver freeze -pattern clock -initialvalue 1 -period 1600ps -dutycycle 50 -starttime 0ps -endtime 800ps sim:/extra_logic/w1
+wave create -driver freeze -pattern clock -initialvalue 1 -period 1600ps -dutycycle 50 -starttime 0ps -endtime 800ps sim:/extra_logic/w2
+wave create -driver freeze -pattern clock -initialvalue 1 -period 1600ps -dutycycle 50 -starttime 0ps -endtime 800ps sim:/extra_logic/w3
+wave create -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 100ps sim:/extra_logic/y0
+wave create -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 100ps sim:/extra_logic/y1
+wave create -driver freeze -pattern constant -value 1 -starttime 0ps -endtime 100ps sim:/extra_logic/y2
+wave create -driver freeze -pattern constant -value 1 -starttime 0ps -endtime 100ps sim:/extra_logic/y3
+wave create -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 100ps sim:/extra_logic/w0
+wave create -driver freeze -pattern constant -value 1 -starttime 0ps -endtime 100ps sim:/extra_logic/w1
+wave create -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 100ps sim:/extra_logic/w2
+wave create -driver freeze -pattern constant -value 1 -starttime 0ps -endtime 100ps sim:/extra_logic/w3
+wave create -driver freeze -pattern clock -initialvalue 0 -period 200ps -dutycycle 50 -starttime 0ps -endtime 800ps sim:/extra_logic/y0
+wave modify -driver freeze -pattern clock -initialvalue 0 -period 200ps -dutycycle 50 -starttime 0ps -endtime 400ps Edit:/extra_logic/y0
+wave create -driver freeze -pattern clock -initialvalue 0 -period 200ps -dutycycle 50 -starttime 0ps -endtime 400ps sim:/extra_logic/y0
+wave create -driver freeze -pattern clock -initialvalue 0 -period 400ps -dutycycle 50 -starttime 0ps -endtime 400ps sim:/extra_logic/y0
+wave create -driver expectedOutput -pattern constant -value 0 -starttime 0ps -endtime 100ps sim:/extra_logic/f
+wave modify -driver expectedOutput -pattern constant -value 1 -starttime 0ps -endtime 200ps Edit:/extra_logic/f
+wave modify -driver expectedOutput -pattern constant -value 0 -starttime 0ps -endtime 100ps Edit:/extra_logic/f
+wave create -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 100ps sim:/extra_logic/y0
+wave modify -driver freeze -pattern constant -value 1 -starttime 100ps -endtime 200ps Edit:/extra_logic/y0
+wave modify -driver freeze -pattern constant -value 0 -starttime 100ps -endtime 200ps Edit:/extra_logic/y0
+wave modify -driver freeze -pattern constant -value 1 -starttime 200ps -endtime 300ps Edit:/extra_logic/y0
+wave modify -driver freeze -pattern constant -value 1 -starttime 300ps -endtime 400ps Edit:/extra_logic/y0
+wave create -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 100ps sim:/extra_logic/w0
+wave modify -driver freeze -pattern constant -value 1 -starttime 100ps -endtime 200ps Edit:/extra_logic/w0
+wave modify -driver freeze -pattern constant -value 0 -starttime 200ps -endtime 300ps Edit:/extra_logic/w0
+wave modify -driver freeze -pattern constant -value 1 -starttime 300ps -endtime 400ps Edit:/extra_logic/w0
+wave create -driver freeze -pattern constant -value 0 -starttime 400ps -endtime 600ps sim:/extra_logic/y1
+wave modify -driver freeze -pattern constant -value 1 -starttime 600ps -endtime 800ps Edit:/extra_logic/y1
+wave create -driver freeze -pattern constant -value 0 -starttime 400ps -endtime 500ps sim:/extra_logic/w1
+wave modify -driver freeze -pattern constant -value 1 -starttime 500ps -endtime 600ps Edit:/extra_logic/w1
+wave modify -driver freeze -pattern constant -value 0 -starttime 600ps -endtime 700ps Edit:/extra_logic/w1
+wave modify -driver freeze -pattern constant -value 1 -starttime 700ps -endtime 800ps Edit:/extra_logic/w1
+wave create -driver freeze -pattern constant -value 0 -starttime 800ps -endtime 1000ps sim:/extra_logic/y2
+wave modify -driver freeze -pattern constant -value 1 -starttime 1000ps -endtime 1200ps Edit:/extra_logic/y2
+wave create -driver freeze -pattern constant -value 0 -starttime 800ps -endtime 900ps sim:/extra_logic/w0
+# /extra_logic/w0 already exists in the wave, cannot add twice
+# Usage: wave create -pattern <clock|constant|random|repeater|counter|none> <args>
+# See Command Reference manual for pattern specific <args>
+wave create -driver freeze -pattern constant -value 0 -starttime 800ps -endtime 900ps sim:/extra_logic/w2
+wave modify -driver freeze -pattern constant -value 1 -starttime 900ps -endtime 1000ps Edit:/extra_logic/w2
+wave modify -driver freeze -pattern constant -value 0 -starttime 1000ps -endtime 1100ps Edit:/extra_logic/w2
+wave modify -driver freeze -pattern constant -value 1 -starttime 1100ps -endtime 1200ps Edit:/extra_logic/w2
+wave create -driver freeze -pattern constant -value 0 -starttime 1200ps -endtime 1400ps sim:/extra_logic/y3
+wave modify -driver freeze -pattern constant -value 1 -starttime 1400ps -endtime 1600ps Edit:/extra_logic/y3
+wave create -driver freeze -pattern constant -value 0 -starttime 1200ps -endtime 1300ps sim:/extra_logic/w3
+wave modify -driver freeze -pattern constant -value 1 -starttime 1300ps -endtime 1400ps Edit:/extra_logic/w3
+wave modify -driver freeze -pattern constant -value 0 -starttime 1400ps -endtime 1500ps Edit:/extra_logic/w3
+wave modify -driver freeze -pattern constant -value 1 -starttime 1500ps -endtime 1600ps Edit:/extra_logic/w3
+run
+add wave -position end  sim:/extra_logic/f
+run
+add wave -position end  sim:/extra_logic/f
+run
+wave modify -driver freeze -pattern constant -value 0 -starttime 400ps -endtime 1600ps Edit:/extra_logic/y0
+wave modify -driver freeze -pattern constant -value 0 -starttime 400ps -endtime 1600ps Edit:/extra_logic/w0
+wave modify -driver freeze -pattern constant -value 0 -starttime 800ps -endtime 1600ps Edit:/extra_logic/y1
+wave modify -driver freeze -pattern constant -value 0 -starttime 800ps -endtime 1600ps Edit:/extra_logic/w1
+wave modify -driver freeze -pattern constant -value 0 -starttime 1200ps -endtime 1600ps Edit:/extra_logic/y2
+wave modify -driver freeze -pattern constant -value 0 -starttime 1200ps -endtime 1600ps Edit:/extra_logic/w2
+add wave -position end  sim:/extra_logic/f
+add wave -position end  sim:/extra_logic/f
+run
+# Break key hit
+run -all
+# WARNING: No extended dataflow license exists
+# Error - UndoAdd called without an UndoStart
+add wave -position end  sim:/extra_logic/f
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Break key hit
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+restart
+run
+run
+restart
+run
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/intelFPGA_lite/17.1/extra_logic/simulation/modelsim/wave.do
+wave editwrite -file C:/intelFPGA_lite/17.1/extra_logic/simulation/modelsim/wave.do -append
+# End time: 14:42:01 on Mar 30,2020, Elapsed time: 0:50:27
+# Errors: 3, Warnings: 1

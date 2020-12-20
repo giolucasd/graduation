@@ -1,0 +1,49 @@
+# Reading C:/intelFPGA_lite/17.1/modelsim_ase/tcl/vsim/pref.tcl
+# do cla_8bits_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/17.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/intelFPGA_lite/17.1/cla_8bits/cla_8bits.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:31:44 on Apr 15,2020
+# vcom -reportprogress 300 -93 -work work C:/intelFPGA_lite/17.1/cla_8bits/cla_8bits.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity cla_8bits
+# -- Compiling architecture rtl of cla_8bits
+# End time: 16:31:44 on Apr 15,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.cla_8bits
+# vsim work.cla_8bits 
+# Start time: 16:31:47 on Apr 15,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.cla_8bits(rtl)
+wave create -driver freeze -pattern counter -startvalue 00001111 -endvalue 11111111 -type Range -direction Up -period 1000ps -step 1111 -repeat forever -range 7 0 -starttime 0ps -endtime 1600ps sim:/cla_8bits/x
+# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+wave modify -driver freeze -pattern counter -startvalue 00001111 -endvalue 11111111 -type Range -direction Up -period 1000ps -step 1 -repeat forever -range 7 0 -starttime 0ps -endtime 1600ps Edit:/cla_8bits/x
+wave modify -driver freeze -pattern counter -startvalue 00001111 -endvalue 11111111 -type Range -direction Up -period 100ps -step 1111 -repeat forever -range 7 0 -starttime 0ps -endtime 1600ps Edit:/cla_8bits/x
+wave modify -driver freeze -pattern counter -startvalue 00001111 -endvalue 11111111 -type Range -direction Up -period 100ps -step 1 -repeat forever -range 7 0 -starttime 0ps -endtime 1600ps Edit:/cla_8bits/x
+wave modify -driver freeze -pattern counter -startvalue 00001111 -endvalue 11111111 -type Range -direction Up -period 100ps -step 11 -repeat forever -range 7 0 -starttime 0ps -endtime 1600ps Edit:/cla_8bits/x
+wave modify -driver freeze -pattern counter -startvalue 00001111 -endvalue 11111111 -type Range -direction Up -period 100ps -step 111 -repeat forever -range 7 0 -starttime 0ps -endtime 1600ps Edit:/cla_8bits/x
+wave modify -driver freeze -pattern counter -startvalue 00000000 -endvalue 11111111 -type Range -direction Up -period 100ps -step 111 -repeat forever -range 7 0 -starttime 0ps -endtime 1600ps Edit:/cla_8bits/x
+wave modify -driver freeze -pattern counter -startvalue 00000000 -endvalue 11111111 -type Range -direction Up -period 100ps -step 11 -repeat forever -range 7 0 -starttime 0ps -endtime 1600ps Edit:/cla_8bits/x
+wave create -driver freeze -pattern counter -startvalue 00000000 -endvalue 11111111 -type Range -direction Up -period 100ps -step 11 -repeat forever -range 7 0 -starttime 0ps -endtime 1600ps sim:/cla_8bits/y
+wave create -driver freeze -pattern clock -initialvalue 0 -period 100ps -dutycycle 50 -starttime 0ps -endtime 1600ps sim:/cla_8bits/cin
+add wave -position end  sim:/cla_8bits/sum
+add wave -position end  sim:/cla_8bits/cout
+restart
+run
+# End time: 16:45:05 on Apr 15,2020, Elapsed time: 0:13:18
+# Errors: 0, Warnings: 0
+wave editwrite -file C:/intelFPGA_lite/17.1/cla_8bits/simulation/modelsim/wave.do

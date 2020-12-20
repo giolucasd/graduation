@@ -1,0 +1,58 @@
+library ieee ;
+use ieee.std_logic_1164.all ;
+use ieee.std_logic_unsigned.all ;
+
+entity cr_ms is
+  port ( clk : in std_logic;
+         clear, set: in std_logic;
+         in_dec, in_un : in std_logic_vector(3 downto 0);
+         dec, un : buffer std_logic_vector(3 downto 0)
+       );
+end cr_ms;
+
+architecture rtl of cr_ms is
+
+  component valid_ms is
+    port (
+      decimal : in std_logic_vector(3 downto 0);
+      unity : in std_logic_vector(3 downto 0);
+      valid: out std_logic
+    );
+  end component;
+  
+  signal valid: std_logic;
+  signal saida_d, saida_u: std_logic_vector(3 downto 0);
+
+begin
+  with saida_d select
+    dec <= "0000" when "UUUU",
+           saida_d when others;
+  with saida_u select
+    un <= "0000" when "UUUU",
+          saida_u when others;
+
+
+  v_ms: valid_ms port map(in_dec, in_un, valid);
+
+  process (clk)
+  begin
+    if clk'EVENT and clk = '1' then
+
+      if clear = '1' then
+        saida_d <= "0000"; saida_u <= "0000";
+      elsif set = '1' and valid = '1' then
+        saida_d <= in_dec; saida_u <= in_saida_u;
+
+      elsif saida_u = "1001" then
+        saida_u <= "0000";
+        if saida_d = "0101" then
+           saida_d <= "0000";
+        else      
+           saida_d <= saida_d + '1';
+        end if;
+      else
+        saida_u <= saida_u + '1' ;
+      end if;
+    end if;
+  end process;
+end rtl;

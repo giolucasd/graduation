@@ -1,0 +1,69 @@
+# Reading C:/intelFPGA_lite/17.1/modelsim_ase/tcl/vsim/pref.tcl
+# do ripple_carry_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/17.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/intelFPGA_lite/17.1/ripple_carry/ripple_carry.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:41:27 on Apr 02,2020
+# vcom -reportprogress 300 -93 -work work C:/intelFPGA_lite/17.1/ripple_carry/ripple_carry.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ripple_carry
+# -- Compiling architecture rtl of ripple_carry
+# End time: 16:41:27 on Apr 02,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/intelFPGA_lite/17.1/ripple_carry/full_adder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:41:27 on Apr 02,2020
+# vcom -reportprogress 300 -93 -work work C:/intelFPGA_lite/17.1/ripple_carry/full_adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity full_adder
+# -- Compiling architecture structural of full_adder
+# End time: 16:41:27 on Apr 02,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.ripple_carry
+# vsim work.ripple_carry 
+# Start time: 16:41:41 on Apr 02,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.ripple_carry(rtl)
+# Loading work.full_adder(structural)
+wave create -driver freeze -pattern constant -value 0000 -range 3 0 -starttime 0ps -endtime 100ps sim:/ripple_carry/x
+# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+wave create -driver freeze -pattern constant -value 0000 -range 3 0 -starttime 0ps -endtime 100ps sim:/ripple_carry/y
+wave create -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 100ps sim:/ripple_carry/cin
+wave modify -driver freeze -pattern constant -value 0001 -range 3 0 -starttime 100ps -endtime 200ps Edit:/ripple_carry/x
+wave modify -driver freeze -pattern constant -value 0001 -range 3 0 -starttime 100ps -endtime 200ps Edit:/ripple_carry/y
+wave modify -driver freeze -pattern constant -value 1 -starttime 100ps -endtime 200ps Edit:/ripple_carry/cin
+wave modify -driver freeze -pattern constant -value 0011 -range 3 0 -starttime 200ps -endtime 300ps Edit:/ripple_carry/x
+wave modify -driver freeze -pattern constant -value 0011 -range 3 0 -starttime 200ps -endtime 300ps Edit:/ripple_carry/y
+wave modify -driver freeze -pattern constant -value 0 -starttime 200ps -endtime 300ps Edit:/ripple_carry/cin
+wave modify -driver freeze -pattern constant -value 0111 -range 3 0 -starttime 300ps -endtime 400ps Edit:/ripple_carry/x
+wave modify -driver freeze -pattern constant -value 0111 -range 3 0 -starttime 300ps -endtime 400ps Edit:/ripple_carry/y
+wave modify -driver freeze -pattern constant -value 1 -starttime 300ps -endtime 400ps Edit:/ripple_carry/cin
+wave modify -driver freeze -pattern constant -value 1111 -range 3 0 -starttime 400ps -endtime 500ps Edit:/ripple_carry/x
+wave modify -driver freeze -pattern constant -value 1111 -range 3 0 -starttime 400ps -endtime 500ps Edit:/ripple_carry/y
+wave modify -driver freeze -pattern constant -value 0 -starttime 400ps -endtime 500ps Edit:/ripple_carry/cin
+add wave -position end  sim:/ripple_carry/r
+add wave -position end  sim:/ripple_carry/cout
+add wave -position end  sim:/ripple_carry/overflow
+run
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/intelFPGA_lite/17.1/ripple_carry/simulation/modelsim/wave.do
+wave editwrite -file C:/intelFPGA_lite/17.1/ripple_carry/simulation/modelsim/wave.do -append
+restart
+run
+# End time: 16:55:33 on Apr 02,2020, Elapsed time: 0:13:52
+# Errors: 0, Warnings: 0

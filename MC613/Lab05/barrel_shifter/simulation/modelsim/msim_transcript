@@ -1,0 +1,45 @@
+# Reading C:/intelFPGA_lite/17.1/modelsim_ase/tcl/vsim/pref.tcl
+# do barrel_shifter_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/17.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/intelFPGA_lite/17.1/barrel_shifter/barrel_shifter.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:28:54 on Apr 15,2020
+# vcom -reportprogress 300 -93 -work work C:/intelFPGA_lite/17.1/barrel_shifter/barrel_shifter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity barrel_shifter
+# -- Compiling architecture rtl of barrel_shifter
+# End time: 14:28:54 on Apr 15,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.barrel_shifter
+# vsim work.barrel_shifter 
+# Start time: 14:29:41 on Apr 15,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.barrel_shifter(rtl)
+wave create -driver freeze -pattern counter -startvalue 00 -endvalue 11 -type Range -direction Up -period 100ps -step 1 -repeat forever -range 1 0 -starttime 0ps -endtime 400ps sim:/barrel_shifter/s
+# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+wave create -driver freeze -pattern counter -startvalue 0000 -endvalue 1111 -type Range -direction Up -period 100ps -step 1 -repeat forever -range 3 0 -starttime 0ps -endtime 400ps sim:/barrel_shifter/w
+wave modify -driver freeze -pattern counter -startvalue 0101 -endvalue 1111 -type Range -direction Up -period 100ps -step 1 -repeat forever -range 3 0 -starttime 0ps -endtime 400ps Edit:/barrel_shifter/w
+wave modify -driver freeze -pattern counter -startvalue 0100 -endvalue 1111 -type Range -direction Up -period 100ps -step 1 -repeat forever -range 3 0 -starttime 0ps -endtime 400ps Edit:/barrel_shifter/w
+wave modify -driver freeze -pattern counter -startvalue 1010 -endvalue 1111 -type Range -direction Up -period 100ps -step 1 -repeat forever -range 3 0 -starttime 0ps -endtime 400ps Edit:/barrel_shifter/w
+add wave -position end  sim:/barrel_shifter/y
+run
+restart
+run
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/intelFPGA_lite/17.1/barrel_shifter/simulation/modelsim/wave.do
+wave editwrite -file C:/intelFPGA_lite/17.1/barrel_shifter/simulation/modelsim/wave.do -append
+# End time: 14:40:37 on Apr 15,2020, Elapsed time: 0:10:56
+# Errors: 0, Warnings: 0

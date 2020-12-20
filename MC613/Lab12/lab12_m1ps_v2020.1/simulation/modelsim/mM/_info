@@ -1,0 +1,296 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelFPGA_lite/17.1/lab12_m1ps_v2020.1/simulation/modelsim
+Ebin2hex
+Z1 w1524924498
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8C:/intelFPGA_lite/17.1/lab12_m1ps_v2020.1/mM/bin2hex.vhd
+Z5 FC:/intelFPGA_lite/17.1/lab12_m1ps_v2020.1/mM/bin2hex.vhd
+l0
+L7
+V>VzFFo=BlGPgaB1fTQ`Ub2
+!s100 i`l5=l0VI^:YKX?`c3PZ=3
+Z6 OV;C;10.5b;63
+31
+Z7 !s110 1592764858
+!i10b 1
+Z8 !s108 1592764857.000000
+Z9 !s90 -reportprogress|300|-93|-work|mM|C:/intelFPGA_lite/17.1/lab12_m1ps_v2020.1/mM/bin2hex.vhd|
+Z10 !s107 C:/intelFPGA_lite/17.1/lab12_m1ps_v2020.1/mM/bin2hex.vhd|
+!i113 1
+Z11 o-93 -work mM
+Z12 tExplicit 1 CvgOpt 0
+Artl
+R2
+R3
+DEx4 work 7 bin2hex 0 22 >VzFFo=BlGPgaB1fTQ`Ub2
+l16
+L14
+V6^Tdd^DAgMzf[PcTnOSo32
+!s100 9ET[94e6<^9PM89R6U?PQ1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ebin2hexascii
+Z13 w1370404391
+R2
+R3
+R0
+8C:/intelFPGA_lite/17.1/lab12_m1ps_v2020.1/mM/bin2hexascii.vhd
+FC:/intelFPGA_lite/17.1/lab12_m1ps_v2020.1/mM/bin2hexascii.vhd
+l0
+L4
+V0ZXYkj5[X=HY:299FJ`MD2
+!s100 dhRBPRzQ6YS][9jI;JXMb2
+R6
+31
+Z14 !s110 1592764859
+!i10b 1
+Z15 !s108 1592764859.000000
+!s90 -reportprogress|300|-93|-work|mM|C:/intelFPGA_lite/17.1/lab12_m1ps_v2020.1/mM/bin2hexascii.vhd|
+!s107 C:/intelFPGA_lite/17.1/lab12_m1ps_v2020.1/mM/bin2hexascii.vhd|
+!i113 1
+R11
+R12
+Ecounter
+R13
+Z16 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z17 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R2
+R3
+R0
+Z18 8C:/intelFPGA_lite/17.1/lab12_m1ps_v2020.1/mM/counter.vhd
+Z19 FC:/intelFPGA_lite/17.1/lab12_m1ps_v2020.1/mM/counter.vhd
+l0
+L5
+VA2GX`jom560BhWOcY`a@E3
+!s100 D6P2WjCco7XW=I^JH0QNW1
+R6
+31
+R14
+!i10b 1
+R15
+Z20 !s90 -reportprogress|300|-93|-work|mM|C:/intelFPGA_lite/17.1/lab12_m1ps_v2020.1/mM/counter.vhd|
+Z21 !s107 C:/intelFPGA_lite/17.1/lab12_m1ps_v2020.1/mM/counter.vhd|
+!i113 1
+R11
+R12
+Aa_counter
+R16
+R17
+R2
+R3
+DEx4 work 7 counter 0 22 A2GX`jom560BhWOcY`a@E3
+l21
+L19
+Vg6nmVYVe9V<^K;h_PzMKY1
+!s100 ME5em96TOM>>dHGh=?R9A0
+R6
+31
+R14
+!i10b 1
+R15
+R20
+R21
+!i113 1
+R11
+R12
+Eflopar
+R13
+R2
+R3
+R0
+Z22 8C:/intelFPGA_lite/17.1/lab12_m1ps_v2020.1/mM/flopar.vhd
+Z23 FC:/intelFPGA_lite/17.1/lab12_m1ps_v2020.1/mM/flopar.vhd
+l0
+L4
+VbU9J^@9I[@D6_XcmR6U310
+!s100 Z1VOzH:?<j0L;`l:3DoUF3
+R6
+31
+R14
+!i10b 1
+R15
+Z24 !s90 -reportprogress|300|-93|-work|mM|C:/intelFPGA_lite/17.1/lab12_m1ps_v2020.1/mM/flopar.vhd|
+Z25 !s107 C:/intelFPGA_lite/17.1/lab12_m1ps_v2020.1/mM/flopar.vhd|
+!i113 1
+R11
+R12
+Aa_flopar
+R2
+R3
+DEx4 work 6 flopar 0 22 bU9J^@9I[@D6_XcmR6U310
+l15
+L14
+VzhkE=DdS75@o6MiPKl0Md2
+!s100 ^bIRzK@Dj^_m9ifG`QH1J1
+R6
+31
+R14
+!i10b 1
+R15
+R24
+R25
+!i113 1
+R11
+R12
+Efreqdiv
+R13
+Z26 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R2
+R3
+R0
+Z27 8C:/intelFPGA_lite/17.1/lab12_m1ps_v2020.1/mM/freqdiv.vhd
+Z28 FC:/intelFPGA_lite/17.1/lab12_m1ps_v2020.1/mM/freqdiv.vhd
+l0
+L5
+V[N5C_1LS[UUIEE4CLZ]a10
+!s100 @gRXC5m_1BK]GiNoTJQ2`0
+R6
+31
+R7
+!i10b 1
+Z29 !s108 1592764858.000000
+Z30 !s90 -reportprogress|300|-93|-work|mM|C:/intelFPGA_lite/17.1/lab12_m1ps_v2020.1/mM/freqdiv.vhd|
+Z31 !s107 C:/intelFPGA_lite/17.1/lab12_m1ps_v2020.1/mM/freqdiv.vhd|
+!i113 1
+R11
+R12
+Abehavior
+R26
+R2
+R3
+DEx4 work 7 freqdiv 0 22 [N5C_1LS[UUIEE4CLZ]a10
+l18
+L14
+VnWV3P;8fQE=6HGR>fC@OB1
+!s100 _FagCJozODfQe^hh1`RDV1
+R6
+31
+R7
+!i10b 1
+R29
+R30
+R31
+!i113 1
+R11
+R12
+Pmm_pack
+R2
+R3
+w1524924770
+R0
+8C:/intelFPGA_lite/17.1/lab12_m1ps_v2020.1/mM/pack.vhd
+FC:/intelFPGA_lite/17.1/lab12_m1ps_v2020.1/mM/pack.vhd
+l0
+L4
+Vd<L]@Il<OzQRdU5OG9RBd0
+!s100 6J:Q<NjRXXHKZ`ONULC>k2
+R6
+31
+R7
+!i10b 1
+R29
+!s90 -reportprogress|300|-93|-work|mM|C:/intelFPGA_lite/17.1/lab12_m1ps_v2020.1/mM/pack.vhd|
+!s107 C:/intelFPGA_lite/17.1/lab12_m1ps_v2020.1/mM/pack.vhd|
+!i113 1
+R11
+R12
+Eram
+R13
+R26
+R2
+R3
+R0
+Z32 8C:/intelFPGA_lite/17.1/lab12_m1ps_v2020.1/mM/ram.vhd
+Z33 FC:/intelFPGA_lite/17.1/lab12_m1ps_v2020.1/mM/ram.vhd
+l0
+L5
+V64I<5:UJ9Q;IICkn8NIc53
+!s100 QVhiD1nQX60=eZ8DSFSR<1
+R6
+31
+R7
+!i10b 1
+R29
+Z34 !s90 -reportprogress|300|-93|-work|mM|C:/intelFPGA_lite/17.1/lab12_m1ps_v2020.1/mM/ram.vhd|
+Z35 !s107 C:/intelFPGA_lite/17.1/lab12_m1ps_v2020.1/mM/ram.vhd|
+!i113 1
+R11
+R12
+Aa_ram
+R26
+R2
+R3
+DEx4 work 3 ram 0 22 64I<5:UJ9Q;IICkn8NIc53
+l27
+L20
+VVJiLkILzHI2Xl`h7LDBoz0
+!s100 6mnfl3XSDS1L:k18zAI?W0
+R6
+31
+R7
+!i10b 1
+R29
+R34
+R35
+!i113 1
+R11
+R12
+Erom
+R13
+R26
+R2
+R3
+R0
+Z36 8C:/intelFPGA_lite/17.1/lab12_m1ps_v2020.1/mM/rom.vhd
+Z37 FC:/intelFPGA_lite/17.1/lab12_m1ps_v2020.1/mM/rom.vhd
+l0
+L5
+VciTgV:BY`XFY2eOHYPe6k0
+!s100 FIeKmo`ahZ=K4bNM=Z1Ri0
+R6
+31
+R7
+!i10b 1
+R29
+Z38 !s90 -reportprogress|300|-93|-work|mM|C:/intelFPGA_lite/17.1/lab12_m1ps_v2020.1/mM/rom.vhd|
+Z39 !s107 C:/intelFPGA_lite/17.1/lab12_m1ps_v2020.1/mM/rom.vhd|
+!i113 1
+R11
+R12
+Aa_rom
+R26
+R2
+R3
+DEx4 work 3 rom 0 22 ciTgV:BY`XFY2eOHYPe6k0
+l25
+L18
+V75KX114kMEj_aV9Ic5?i62
+!s100 7C=>@5hU93k6TzC`C<nzM2
+R6
+31
+R7
+!i10b 1
+R29
+R38
+R39
+!i113 1
+R11
+R12

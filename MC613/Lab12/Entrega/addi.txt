@@ -1,0 +1,6 @@
+Para a execução da instrução addi, foi criada uma nova componente "selector" que tem a função de selecionar 
+qual sinal será passado para o segundo argumento da ALU ("B"): caso a instrução seja addi, é transmitido o 
+sinal extendido para 32 bits do imediato e, caso contrário, é transmitido o sinal no registrador rs2. 
+Isso foi feito para garantir que a ALU recebesse os operandos desejados em cada instrução. 
+Note que a execução da instrução addi nada mais é do que uma instrução add sendo o segundo operando 
+o imediato extendido para 32 bits.  

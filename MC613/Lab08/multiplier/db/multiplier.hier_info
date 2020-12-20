@@ -1,0 +1,288 @@
+|multiplier
+a[0] => shift_register:register_a.par_in[0]
+a[1] => shift_register:register_a.par_in[1]
+a[2] => shift_register:register_a.par_in[2]
+a[3] => shift_register:register_a.par_in[3]
+b[0] => shift_register:register_b.par_in[0]
+b[1] => shift_register:register_b.par_in[1]
+b[2] => shift_register:register_b.par_in[2]
+b[3] => shift_register:register_b.par_in[3]
+r[0] << ripple_carry:adder.r[0]
+r[1] << ripple_carry:adder.r[1]
+r[2] << ripple_carry:adder.r[2]
+r[3] << ripple_carry:adder.r[3]
+r[4] << ripple_carry:adder.r[4]
+r[5] << ripple_carry:adder.r[5]
+r[6] << ripple_carry:adder.r[6]
+r[7] << ripple_carry:adder.r[7]
+clk => shift_register:register_a.clk
+clk => shift_register:register_b.clk
+clk => reg:register_r.clk
+set => reg:register_r.clear
+set => shift_register:register_a.mode[1]
+set => shift_register:register_b.mode[0]
+
+
+|multiplier|shift_register:register_a
+clk => memoria[0].CLK
+clk => memoria[1].CLK
+clk => memoria[2].CLK
+clk => memoria[3].CLK
+clk => memoria[4].CLK
+clk => memoria[5].CLK
+clk => memoria[6].CLK
+clk => memoria[7].CLK
+clk => par_out[0]~reg0.CLK
+clk => par_out[1]~reg0.CLK
+clk => par_out[2]~reg0.CLK
+clk => par_out[3]~reg0.CLK
+clk => par_out[4]~reg0.CLK
+clk => par_out[5]~reg0.CLK
+clk => par_out[6]~reg0.CLK
+clk => par_out[7]~reg0.CLK
+mode[0] => Equal0.IN1
+mode[0] => Equal1.IN1
+mode[0] => Equal2.IN0
+mode[1] => Equal0.IN0
+mode[1] => Equal1.IN0
+mode[1] => Equal2.IN1
+ser_in => memoria.DATAB
+ser_in => memoria.DATAB
+par_in[0] => memoria.DATAB
+par_in[1] => memoria.DATAB
+par_in[2] => memoria.DATAB
+par_in[3] => memoria.DATAB
+par_in[4] => memoria.DATAB
+par_in[5] => memoria.DATAB
+par_in[6] => memoria.DATAB
+par_in[7] => memoria.DATAB
+par_out[0] <= par_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+par_out[1] <= par_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+par_out[2] <= par_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+par_out[3] <= par_out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+par_out[4] <= par_out[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+par_out[5] <= par_out[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+par_out[6] <= par_out[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+par_out[7] <= par_out[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplier|shift_register:register_b
+clk => memoria[0].CLK
+clk => memoria[1].CLK
+clk => memoria[2].CLK
+clk => memoria[3].CLK
+clk => par_out[0]~reg0.CLK
+clk => par_out[1]~reg0.CLK
+clk => par_out[2]~reg0.CLK
+clk => par_out[3]~reg0.CLK
+mode[0] => Equal0.IN1
+mode[0] => Equal1.IN1
+mode[0] => Equal2.IN0
+mode[1] => Equal0.IN0
+mode[1] => Equal1.IN0
+mode[1] => Equal2.IN1
+ser_in => memoria.DATAB
+ser_in => memoria.DATAB
+par_in[0] => memoria.DATAB
+par_in[1] => memoria.DATAB
+par_in[2] => memoria.DATAB
+par_in[3] => memoria.DATAB
+par_out[0] <= par_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+par_out[1] <= par_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+par_out[2] <= par_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+par_out[3] <= par_out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplier|reg:register_r
+clk => memoria[0].CLK
+clk => memoria[1].CLK
+clk => memoria[2].CLK
+clk => memoria[3].CLK
+clk => memoria[4].CLK
+clk => memoria[5].CLK
+clk => memoria[6].CLK
+clk => memoria[7].CLK
+clk => data_out[0]~reg0.CLK
+clk => data_out[1]~reg0.CLK
+clk => data_out[2]~reg0.CLK
+clk => data_out[3]~reg0.CLK
+clk => data_out[4]~reg0.CLK
+clk => data_out[5]~reg0.CLK
+clk => data_out[6]~reg0.CLK
+clk => data_out[7]~reg0.CLK
+data_in[0] => memoria.DATAB
+data_in[1] => memoria.DATAB
+data_in[2] => memoria.DATAB
+data_in[3] => memoria.DATAB
+data_in[4] => memoria.DATAB
+data_in[5] => memoria.DATAB
+data_in[6] => memoria.DATAB
+data_in[7] => memoria.DATAB
+data_out[0] <= data_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[1] <= data_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= data_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= data_out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[4] <= data_out[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[5] <= data_out[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[6] <= data_out[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[7] <= data_out[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+load => memoria.OUTPUTSELECT
+load => memoria.OUTPUTSELECT
+load => memoria.OUTPUTSELECT
+load => memoria.OUTPUTSELECT
+load => memoria.OUTPUTSELECT
+load => memoria.OUTPUTSELECT
+load => memoria.OUTPUTSELECT
+load => memoria.OUTPUTSELECT
+clear => memoria.OUTPUTSELECT
+clear => memoria.OUTPUTSELECT
+clear => memoria.OUTPUTSELECT
+clear => memoria.OUTPUTSELECT
+clear => memoria.OUTPUTSELECT
+clear => memoria.OUTPUTSELECT
+clear => memoria.OUTPUTSELECT
+clear => memoria.OUTPUTSELECT
+
+
+|multiplier|ripple_carry:adder
+x[0] => full_adder:initial_stage.x
+x[1] => full_adder:intermediate_stages:1:intermediate.x
+x[2] => full_adder:intermediate_stages:2:intermediate.x
+x[3] => full_adder:intermediate_stages:3:intermediate.x
+x[4] => full_adder:intermediate_stages:4:intermediate.x
+x[5] => full_adder:intermediate_stages:5:intermediate.x
+x[6] => full_adder:intermediate_stages:6:intermediate.x
+x[7] => full_adder:intermediate_stages:7:intermediate.x
+y[0] => full_adder:initial_stage.y
+y[1] => full_adder:intermediate_stages:1:intermediate.y
+y[2] => full_adder:intermediate_stages:2:intermediate.y
+y[3] => full_adder:intermediate_stages:3:intermediate.y
+y[4] => full_adder:intermediate_stages:4:intermediate.y
+y[5] => full_adder:intermediate_stages:5:intermediate.y
+y[6] => full_adder:intermediate_stages:6:intermediate.y
+y[7] => full_adder:intermediate_stages:7:intermediate.y
+r[0] <= full_adder:initial_stage.r
+r[1] <= full_adder:intermediate_stages:1:intermediate.r
+r[2] <= full_adder:intermediate_stages:2:intermediate.r
+r[3] <= full_adder:intermediate_stages:3:intermediate.r
+r[4] <= full_adder:intermediate_stages:4:intermediate.r
+r[5] <= full_adder:intermediate_stages:5:intermediate.r
+r[6] <= full_adder:intermediate_stages:6:intermediate.r
+r[7] <= full_adder:intermediate_stages:7:intermediate.r
+cin => full_adder:initial_stage.cin
+cout <= full_adder:intermediate_stages:7:intermediate.cout
+overflow <= overflow.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplier|ripple_carry:adder|full_adder:initial_stage
+x => r.IN0
+x => cout.IN0
+x => cout.IN0
+y => r.IN1
+y => cout.IN1
+y => cout.IN0
+r <= r.DB_MAX_OUTPUT_PORT_TYPE
+cin => r.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplier|ripple_carry:adder|full_adder:\intermediate_stages:1:intermediate
+x => r.IN0
+x => cout.IN0
+x => cout.IN0
+y => r.IN1
+y => cout.IN1
+y => cout.IN0
+r <= r.DB_MAX_OUTPUT_PORT_TYPE
+cin => r.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplier|ripple_carry:adder|full_adder:\intermediate_stages:2:intermediate
+x => r.IN0
+x => cout.IN0
+x => cout.IN0
+y => r.IN1
+y => cout.IN1
+y => cout.IN0
+r <= r.DB_MAX_OUTPUT_PORT_TYPE
+cin => r.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplier|ripple_carry:adder|full_adder:\intermediate_stages:3:intermediate
+x => r.IN0
+x => cout.IN0
+x => cout.IN0
+y => r.IN1
+y => cout.IN1
+y => cout.IN0
+r <= r.DB_MAX_OUTPUT_PORT_TYPE
+cin => r.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplier|ripple_carry:adder|full_adder:\intermediate_stages:4:intermediate
+x => r.IN0
+x => cout.IN0
+x => cout.IN0
+y => r.IN1
+y => cout.IN1
+y => cout.IN0
+r <= r.DB_MAX_OUTPUT_PORT_TYPE
+cin => r.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplier|ripple_carry:adder|full_adder:\intermediate_stages:5:intermediate
+x => r.IN0
+x => cout.IN0
+x => cout.IN0
+y => r.IN1
+y => cout.IN1
+y => cout.IN0
+r <= r.DB_MAX_OUTPUT_PORT_TYPE
+cin => r.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplier|ripple_carry:adder|full_adder:\intermediate_stages:6:intermediate
+x => r.IN0
+x => cout.IN0
+x => cout.IN0
+y => r.IN1
+y => cout.IN1
+y => cout.IN0
+r <= r.DB_MAX_OUTPUT_PORT_TYPE
+cin => r.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplier|ripple_carry:adder|full_adder:\intermediate_stages:7:intermediate
+x => r.IN0
+x => cout.IN0
+x => cout.IN0
+y => r.IN1
+y => cout.IN1
+y => cout.IN0
+r <= r.DB_MAX_OUTPUT_PORT_TYPE
+cin => r.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,37 @@
+|cla_4bits
+x[0] => g[0].IN0
+x[0] => p[0].IN0
+x[0] => sum.IN0
+x[1] => g[1].IN0
+x[1] => p[1].IN0
+x[1] => sum.IN0
+x[2] => g[2].IN0
+x[2] => p[2].IN0
+x[2] => sum.IN0
+x[3] => g[3].IN0
+x[3] => p[3].IN0
+x[3] => sum.IN0
+y[0] => g[0].IN1
+y[0] => p[0].IN1
+y[0] => sum.IN1
+y[1] => g[1].IN1
+y[1] => p[1].IN1
+y[1] => sum.IN1
+y[2] => g[2].IN1
+y[2] => p[2].IN1
+y[2] => sum.IN1
+y[3] => g[3].IN1
+y[3] => p[3].IN1
+y[3] => sum.IN1
+cin => c.IN1
+cin => c.IN1
+cin => c.IN1
+cin => c.IN1
+cin => sum.IN1
+sum[0] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+sum[1] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+sum[2] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+sum[3] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+

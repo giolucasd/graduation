@@ -1,0 +1,49 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/ec2018-ceb/ra216047/Documents/MC613/lab02/simulation/modelsim
+Eoriginal
+Z1 w1583952857
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8/home/ec2018-ceb/ra216047/Documents/MC613/lab02/original.vhd
+Z5 F/home/ec2018-ceb/ra216047/Documents/MC613/lab02/original.vhd
+l0
+L3
+VAn>2[OSJ;0=d`_3b_C;_m1
+!s100 Bf;n<Cz`9SMP7SjjGN]F:2
+Z6 OV;C;10.5b;63
+31
+Z7 !s110 1583956593
+!i10b 1
+Z8 !s108 1583956593.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|/home/ec2018-ceb/ra216047/Documents/MC613/lab02/original.vhd|
+Z10 !s107 /home/ec2018-ceb/ra216047/Documents/MC613/lab02/original.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Aestrutural
+R2
+R3
+DEx4 work 8 original 0 22 An>2[OSJ;0=d`_3b_C;_m1
+l9
+L7
+V3RJ3[jeBUYIYGf20lf?<L3
+!s100 96gBK<9fH9:]b8Q<7NCf=0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12

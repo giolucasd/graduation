@@ -1,0 +1,57 @@
+{
+    "terminal.integrated.scrollback": 10000,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "diffEditor.renderSideBySide": true,
+    "editor.minimap.maxColumn": 40,
+    "git.autofetch": true,
+    "files.watcherExclude": {
+      "**/__pycache__/**": true,
+      "**documents/**": true,
+      "**/node_modules/**": true,
+      "**/site-packages/**": true
+    },
+    "python.formatting.provider": "autopep8",
+    "python.linting.enabled": true,
+    "python.linting.flake8CategorySeverity.E": "Information",
+    "python.linting.flake8Enabled": false,
+    "python.linting.pylintEnabled": true,
+    "python.pythonPath": "/home/tacchyon/.virtualenvs/graduation/bin/python", // personal
+    "python.venvPath": "/home/tacchyon/.virtualenvs/graduation",
+    "python.languageServer": "Jedi",
+    "python.workspaceSymbols.exclusionPatterns": [
+      "**/__pycache__/**",
+      "**/documents/**",
+      "**/node_modules/**",
+      "**/site-packages/**"
+    ],
+    "python.linting.pylintArgs": ["--load-plugins", "pylint_django"],
+    "[python]": {
+      "editor.codeActionsOnSave": {
+        "source.organizeImports": true,
+        "source.fixAll": true
+      },
+      "editor.formatOnPaste": true,
+      "editor.formatOnSave": true,
+      "editor.rulers": [80]
+    },
+    "[markdown]": {
+      "editor.wordWrap": "on",
+      "editor.wordWrapColumn": 80
+    },
+    "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+      },
+      "editor.formatOnSave": true,
+      "editor.rulers": [80]
+    },
+    "eslint.enable": true
+}
+  

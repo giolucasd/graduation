@@ -1,0 +1,112 @@
+# Reading C:/intelFPGA_lite/17.1/modelsim_ase/tcl/vsim/pref.tcl
+# do mux4_to_1_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/17.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/intelFPGA_lite/17.1/mux4_to_1/mux4_to_1.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:54:44 on Mar 30,2020
+# vcom -reportprogress 300 -93 -work work C:/intelFPGA_lite/17.1/mux4_to_1/mux4_to_1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux4_to_1
+# -- Compiling architecture rtl of mux4_to_1
+# End time: 18:54:44 on Mar 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/intelFPGA_lite/17.1/mux4_to_1/dec2_to_4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:54:44 on Mar 30,2020
+# vcom -reportprogress 300 -93 -work work C:/intelFPGA_lite/17.1/mux4_to_1/dec2_to_4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dec2_to_4
+# -- Compiling architecture rtl of dec2_to_4
+# End time: 18:54:44 on Mar 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/intelFPGA_lite/17.1/mux4_to_1/extra_logic.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:54:45 on Mar 30,2020
+# vcom -reportprogress 300 -93 -work work C:/intelFPGA_lite/17.1/mux4_to_1/extra_logic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity extra_logic
+# -- Compiling architecture rtl of extra_logic
+# End time: 18:54:45 on Mar 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.mux4_to_1
+# vsim work.mux4_to_1 
+# Start time: 18:54:49 on Mar 30,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.mux4_to_1(rtl)
+# Loading work.dec2_to_4(rtl)
+# Loading work.extra_logic(rtl)
+wave create -driver freeze -pattern clock -initialvalue 0 -period 100ps -dutycycle 50 -starttime 0ps -endtime 800ps sim:/mux4_to_1/d0
+# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+wave create -driver freeze -pattern clock -initialvalue 0 -period 200ps -dutycycle 50 -starttime 0ps -endtime 800ps sim:/mux4_to_1/d1
+wave create -driver freeze -pattern clock -initialvalue 0 -period 400ps -dutycycle 50 -starttime 0ps -endtime 800ps sim:/mux4_to_1/d2
+wave create -driver freeze -pattern clock -initialvalue 0 -period 800ps -dutycycle 50 -starttime 0ps -endtime 800ps sim:/mux4_to_1/d3
+wave create -driver freeze -pattern constant -value 00 -range 1 0 -starttime 0ps -endtime 100ps sim:/mux4_to_1/sel
+wave modify -driver freeze -pattern constant -value 01 -range 1 0 -starttime 100ps -endtime 200ps Edit:/mux4_to_1/sel
+wave modify -driver freeze -pattern constant -value 10 -range 1 0 -starttime 200ps -endtime 300ps Edit:/mux4_to_1/sel
+wave modify -driver freeze -pattern constant -value 11 -range 1 0 -starttime 300ps -endtime 400ps Edit:/mux4_to_1/sel
+wave modify -driver freeze -pattern constant -value 00 -range 1 0 -starttime 400ps -endtime 500ps Edit:/mux4_to_1/sel
+wave modify -driver freeze -pattern constant -value 01 -range 1 0 -starttime 500ps -endtime 600ps Edit:/mux4_to_1/sel
+wave modify -driver freeze -pattern constant -value 10 -range 1 0 -starttime 600ps -endtime 700ps Edit:/mux4_to_1/sel
+wave modify -driver freeze -pattern constant -value 11 -range 1 0 -starttime 700ps -endtime 800ps Edit:/mux4_to_1/sel
+add wave -position end  sim:/mux4_to_1/output
+run
+wave modify -driver freeze -pattern clock -initialvalue 0 -period 100ps -dutycycle 50 -starttime 0ps -endtime 800ps Edit:/mux4_to_1/d1
+wave modify -driver freeze -pattern clock -initialvalue 0 -period 100ps -dutycycle 50 -starttime 0ps -endtime 800ps Edit:/mux4_to_1/d2
+wave modify -driver freeze -pattern clock -initialvalue 1 -period 100ps -dutycycle 50 -starttime 0ps -endtime 800ps Edit:/mux4_to_1/d3
+wave modify -driver freeze -pattern clock -initialvalue 1 -period 100ps -dutycycle 50 -starttime 0ps -endtime 800ps Edit:/mux4_to_1/d2
+wave modify -driver freeze -pattern clock -initialvalue 0 -period 800ps -dutycycle 50 -starttime 0ps -endtime 800ps Edit:/mux4_to_1/d1
+wave modify -driver freeze -pattern clock -initialvalue 0 -period 800ps -dutycycle 50 -starttime 0ps -endtime 800ps Edit:/mux4_to_1/d2
+wave modify -driver freeze -pattern clock -initialvalue 0 -period 800ps -dutycycle 50 -starttime 0ps -endtime 800ps Edit:/mux4_to_1/d3
+wave modify -driver freeze -pattern clock -initialvalue 0 -period 1600ps -dutycycle 50 -starttime 0ps -endtime 800ps Edit:/mux4_to_1/d3
+wave modify -driver freeze -pattern clock -initialvalue 0 -period 1600ps -dutycycle 50 -starttime 0ps -endtime 800ps Edit:/mux4_to_1/d2
+wave modify -driver freeze -pattern clock -initialvalue 0 -period 1600ps -dutycycle 50 -starttime 0ps -endtime 800ps Edit:/mux4_to_1/d1
+restart
+run
+wave modify -driver freeze -pattern clock -initialvalue 1 -period 1600ps -dutycycle 50 -starttime 0ps -endtime 800ps Edit:/mux4_to_1/d0
+restart
+run
+wave modify -driver freeze -pattern clock -initialvalue 0 -period 1600ps -dutycycle 50 -starttime 0ps -endtime 800ps Edit:/mux4_to_1/d0
+wave modify -driver freeze -pattern clock -initialvalue 1 -period 1600ps -dutycycle 50 -starttime 0ps -endtime 800ps Edit:/mux4_to_1/d1
+restart
+run
+wave modify -driver freeze -pattern clock -initialvalue 1 -period 1600ps -dutycycle 50 -starttime 0ps -endtime 800ps Edit:/mux4_to_1/d2
+wave modify -driver freeze -pattern clock -initialvalue 0 -period 1600ps -dutycycle 50 -starttime 0ps -endtime 800ps Edit:/mux4_to_1/d1
+restart
+run
+wave modify -driver freeze -pattern clock -initialvalue 1 -period 1600ps -dutycycle 50 -starttime 0ps -endtime 800ps Edit:/mux4_to_1/d3
+wave modify -driver freeze -pattern clock -initialvalue 0 -period 1600ps -dutycycle 50 -starttime 0ps -endtime 800ps Edit:/mux4_to_1/d2
+restart
+run
+wave modify -driver freeze -pattern clock -initialvalue 0 -period 1600ps -dutycycle 50 -starttime 0ps -endtime 800ps Edit:/mux4_to_1/d3
+restart
+run
+wave modify -driver freeze -pattern clock -initialvalue 0 -period 100ps -dutycycle 50 -starttime 0ps -endtime 800ps Edit:/mux4_to_1/d0
+wave modify -driver freeze -pattern clock -initialvalue 0 -period 200ps -dutycycle 50 -starttime 0ps -endtime 800ps Edit:/mux4_to_1/d1
+wave modify -driver freeze -pattern clock -initialvalue 0 -period 400ps -dutycycle 50 -starttime 0ps -endtime 800ps Edit:/mux4_to_1/d2
+wave modify -driver freeze -pattern clock -initialvalue 0 -period 800ps -dutycycle 50 -starttime 0ps -endtime 800ps Edit:/mux4_to_1/d3
+restart
+run
+run
+restart
+run
+# End time: 19:09:06 on Mar 30,2020, Elapsed time: 0:14:17
+# Errors: 0, Warnings: 0
+wave editwrite -file C:/intelFPGA_lite/17.1/mux4_to_1/simulation/modelsim/wave.do

@@ -1,0 +1,34 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlib mM
+vmap mM mM
+vcom -93 -work mM {C:/intelFPGA_lite/17.1/lab12_m1ps_v2020.1/mM/bin2hex.vhd}
+vcom -93 -work mM {C:/intelFPGA_lite/17.1/lab12_m1ps_v2020.1/mM/rom.vhd}
+vcom -93 -work mM {C:/intelFPGA_lite/17.1/lab12_m1ps_v2020.1/mM/ram.vhd}
+vcom -93 -work mM {C:/intelFPGA_lite/17.1/lab12_m1ps_v2020.1/mM/pack.vhd}
+vcom -93 -work mM {C:/intelFPGA_lite/17.1/lab12_m1ps_v2020.1/mM/freqdiv.vhd}
+vcom -93 -work mM {C:/intelFPGA_lite/17.1/lab12_m1ps_v2020.1/mM/flopar.vhd}
+vcom -93 -work mM {C:/intelFPGA_lite/17.1/lab12_m1ps_v2020.1/mM/counter.vhd}
+vcom -93 -work mM {C:/intelFPGA_lite/17.1/lab12_m1ps_v2020.1/mM/bin2hexascii.vhd}
+vlib Processor
+vmap Processor Processor
+vcom -93 -work Processor {C:/intelFPGA_lite/17.1/lab12_m1ps_v2020.1/Processor/reg.vhd}
+vcom -93 -work Processor {C:/intelFPGA_lite/17.1/lab12_m1ps_v2020.1/Processor/PC.vhd}
+vcom -93 -work Processor {C:/intelFPGA_lite/17.1/lab12_m1ps_v2020.1/Processor/pack.vhd}
+vcom -93 -work Processor {C:/intelFPGA_lite/17.1/lab12_m1ps_v2020.1/Processor/bank.vhd}
+vcom -93 -work Processor {C:/intelFPGA_lite/17.1/lab12_m1ps_v2020.1/Processor/memory.vhd}
+vcom -93 -work Processor {C:/intelFPGA_lite/17.1/lab12_m1ps_v2020.1/Processor/ALU.vhd}
+vcom -93 -work work {C:/intelFPGA_lite/17.1/lab12_m1ps_v2020.1/Processor/dec5_to_32.vhd}
+vcom -93 -work work {C:/intelFPGA_lite/17.1/lab12_m1ps_v2020.1/Processor/zbuffer.vhd}
+vcom -93 -work mM {C:/intelFPGA_lite/17.1/lab12_m1ps_v2020.1/mM/vga_timing.vhd}
+vcom -93 -work mM {C:/intelFPGA_lite/17.1/lab12_m1ps_v2020.1/mM/vga_text_mode.vhd}
+vcom -93 -work mM {C:/intelFPGA_lite/17.1/lab12_m1ps_v2020.1/mM/mM_toplevel.vhd}
+vcom -93 -work mM {C:/intelFPGA_lite/17.1/lab12_m1ps_v2020.1/mM/mM.vhd}
+vcom -93 -work mM {C:/intelFPGA_lite/17.1/lab12_m1ps_v2020.1/mM/m1ps2vga.vhd}
+vcom -93 -work Processor {C:/intelFPGA_lite/17.1/lab12_m1ps_v2020.1/Processor/UC.vhd}
+

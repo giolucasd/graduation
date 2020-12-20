@@ -1,0 +1,168 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelFPGA_lite/17.1/bank/simulation/modelsim
+Ebank
+Z1 w1592765349
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8C:/intelFPGA_lite/17.1/bank/bank.vhd
+Z6 FC:/intelFPGA_lite/17.1/bank/bank.vhd
+l0
+L5
+VgDH>0dJ8CmY^SZMO3jf3W3
+!s100 BnbHlo^SPR]dGLmYMlnb[2
+Z7 OV;C;10.5b;63
+31
+Z8 !s110 1592765392
+!i10b 1
+Z9 !s108 1592765392.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/intelFPGA_lite/17.1/bank/bank.vhd|
+Z11 !s107 C:/intelFPGA_lite/17.1/bank/bank.vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Abehavior
+R2
+R3
+R4
+DEx4 work 4 bank 0 22 gDH>0dJ8CmY^SZMO3jf3W3
+l54
+L23
+V^bbKXb>Q]hEz`fN1:2X4E1
+!s100 8ecR`XjOI4m>DlJdJIPLQ3
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Edec5_to_32
+Z14 w1592764603
+R3
+R4
+R0
+Z15 8C:/intelFPGA_lite/17.1/bank/dec5_to_32.vhd
+Z16 FC:/intelFPGA_lite/17.1/bank/dec5_to_32.vhd
+l0
+L4
+VfOSZD5IY[Sh]9Dnh`P[2I0
+!s100 LD`RK[;E58fQe31]eNY341
+R7
+31
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/intelFPGA_lite/17.1/bank/dec5_to_32.vhd|
+Z18 !s107 C:/intelFPGA_lite/17.1/bank/dec5_to_32.vhd|
+!i113 1
+R12
+R13
+Artl
+R3
+R4
+DEx4 work 10 dec5_to_32 0 22 fOSZD5IY[Sh]9Dnh`P[2I0
+l12
+L10
+V1NdVieRIZ[RmQ[Bg;`me81
+!s100 WClbeM6U6C`HCCo^:;c7X2
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Ereg
+Z19 w1370404391
+R3
+R4
+R0
+Z20 8C:/intelFPGA_lite/17.1/bank/reg.vhd
+Z21 FC:/intelFPGA_lite/17.1/bank/reg.vhd
+l0
+L4
+VMW0OjEFZL=8:^1^ai7LBe3
+!s100 R5lkCJHDlj_hHeVhhHjn33
+R7
+31
+R8
+!i10b 1
+R9
+Z22 !s90 -reportprogress|300|-93|-work|work|C:/intelFPGA_lite/17.1/bank/reg.vhd|
+Z23 !s107 C:/intelFPGA_lite/17.1/bank/reg.vhd|
+!i113 1
+R12
+R13
+Abehavior
+R3
+R4
+DEx4 work 3 reg 0 22 MW0OjEFZL=8:^1^ai7LBe3
+l18
+L17
+V[lV?dS9Tghb7QZi3PacZ<2
+!s100 _iK9gKRSVK2OX7>2]OmLE2
+R7
+31
+R8
+!i10b 1
+R9
+R22
+R23
+!i113 1
+R12
+R13
+Ezbuffer
+Z24 w1588447943
+R3
+R4
+R0
+Z25 8C:/intelFPGA_lite/17.1/bank/zbuffer.vhd
+Z26 FC:/intelFPGA_lite/17.1/bank/zbuffer.vhd
+l0
+L3
+V__<zh==l_d4ZFam`9M<C03
+!s100 eDmCzWD0:W8YaeJA<;oZ52
+R7
+31
+R8
+!i10b 1
+R9
+Z27 !s90 -reportprogress|300|-93|-work|work|C:/intelFPGA_lite/17.1/bank/zbuffer.vhd|
+Z28 !s107 C:/intelFPGA_lite/17.1/bank/zbuffer.vhd|
+!i113 1
+R12
+R13
+Artl
+R3
+R4
+DEx4 work 7 zbuffer 0 22 __<zh==l_d4ZFam`9M<C03
+l11
+L10
+V9C4d:[b>TV@07cGPWDHli3
+!s100 Eb6f<I1YWe;BgM4JfZOZb0
+R7
+31
+R8
+!i10b 1
+R9
+R27
+R28
+!i113 1
+R12
+R13

@@ -1,0 +1,47 @@
+# Reading C:/intelFPGA_lite/17.1/modelsim_ase/tcl/vsim/pref.tcl
+# do fsm_diag_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/17.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/intelFPGA_lite/17.1/fsm_diag/fsm_diag.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:38:08 on Jun 06,2020
+# vcom -reportprogress 300 -93 -work work C:/intelFPGA_lite/17.1/fsm_diag/fsm_diag.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fsm_diag
+# -- Compiling architecture rtl of fsm_diag
+# End time: 15:38:08 on Jun 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.fsm_diag
+# vsim work.fsm_diag 
+# Start time: 15:38:15 on Jun 06,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.fsm_diag(rtl)
+wave create -driver freeze -pattern clock -initialvalue 0 -period 100ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/fsm_diag/clock
+# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+wave create -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 1000ps sim:/fsm_diag/reset
+wave modify -driver freeze -pattern constant -value 1 -starttime 0ps -endtime 100ps Edit:/fsm_diag/reset
+wave create -driver freeze -pattern clock -initialvalue 0 -period 100ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/fsm_diag/w
+add wave -position end  sim:/fsm_diag/z
+add wave -position end  sim:/fsm_diag/currentState
+restart
+run
+wave modify -driver freeze -pattern clock -initialvalue 0 -period 200ps -dutycycle 50 -starttime 0ps -endtime 1000ps Edit:/fsm_diag/w
+restart
+run
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/intelFPGA_lite/17.1/fsm_diag/simulation/modelsim/wave.do
+wave editwrite -file C:/intelFPGA_lite/17.1/fsm_diag/simulation/modelsim/wave.do -append
+# End time: 15:42:52 on Jun 06,2020, Elapsed time: 0:04:37
+# Errors: 0, Warnings: 0

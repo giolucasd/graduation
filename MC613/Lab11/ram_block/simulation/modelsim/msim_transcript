@@ -1,0 +1,54 @@
+# Reading C:/intelFPGA_lite/17.1/modelsim_ase/tcl/vsim/pref.tcl
+# do ram_block_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/17.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/intelFPGA_lite/17.1/ram_block/ram_block.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:49:11 on Jun 13,2020
+# vcom -reportprogress 300 -93 -work work C:/intelFPGA_lite/17.1/ram_block/ram_block.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ram_block
+# -- Compiling architecture direct of ram_block
+# End time: 14:49:11 on Jun 13,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.ram_block
+# vsim work.ram_block 
+# Start time: 14:50:00 on Jun 13,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.ram_block(direct)
+wave create -driver freeze -pattern clock -initialvalue 0 -period 100ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/ram_block/Clock
+# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+wave create -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 1000ps sim:/ram_block/WrEn
+wave modify -driver freeze -pattern constant -value 1 -starttime 0ps -endtime 500ps Edit:/ram_block/WrEn
+wave create -driver freeze -pattern random -initialvalue 000000000 -period 50ps -random_type Uniform -seed 5 -range 7 0 -starttime 0ps -endtime 1000ps sim:/ram_block/Data
+# Value length (9) does not equal array index length (8).
+# 
+#Invalid value to -initialvalue switch: 000000000
+# 
+wave create -driver freeze -pattern random -initialvalue 00000000 -period 100ps -random_type Uniform -seed 5 -range 7 0 -starttime 0ps -endtime 1000ps sim:/ram_block/Data
+wave create -driver freeze -pattern constant -value 0000000 -range 6 0 -starttime 0ps -endtime 1000ps sim:/ram_block/Address
+wave modify -driver freeze -pattern constant -value 0000001 -range 6 0 -starttime 0ps -endtime 250ps Edit:/ram_block/Address
+wave modify -driver freeze -pattern constant -value 0000000 -range 6 0 -starttime 500ps -endtime 750ps Edit:/ram_block/Address
+wave modify -driver freeze -pattern constant -value 0000001 -range 6 0 -starttime 750ps -endtime 1000ps Edit:/ram_block/Address
+add wave -position end  sim:/ram_block/Q
+restart
+run
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/intelFPGA_lite/17.1/ram_block/simulation/modelsim/wave.do
+wave editwrite -file C:/intelFPGA_lite/17.1/ram_block/simulation/modelsim/wave.do -append
+# End time: 15:01:54 on Jun 13,2020, Elapsed time: 0:11:54
+# Errors: 1, Warnings: 0
