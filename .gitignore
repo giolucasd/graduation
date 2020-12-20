@@ -1,0 +1,17 @@
+*~
+
+# mc613 special files
+memory/
+db/
+incremental_db/
+output_files/
+simulation/
+*.wlf
+*.rpt
+*.vhd.bak
+*.zip
+*.qpf
+*.qsf
+*.qws
+*.lnk
+*.vwf
