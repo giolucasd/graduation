@@ -10,4 +10,5 @@ Subjects:
 * MC536: Databases: Theory and Practice;
 * MC558: Algorithm Design and Analysis II;
 * MC613: Digital Circuits Laboratory;
+* MC833: Network Programming;
 * MC886: Machine Learning;
