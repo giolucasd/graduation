@@ -1,0 +1,44 @@
+original_mail,billing_address,billing_city,billing_postalCode,billing_stateProvince,billing_country,billing_zone,billing_firstName,billing_lastName,billing_phone,emailAddress,response_status
+mail1@mail.com,"4th Av.","New York","10005","NY","US","NY","Jon","Doe","+1-202-555-0124","jondoe1@mail.net",200
+mail2@mail.com,234423,"New York","10005","NY","US","NY","Jon","Doe","+1-202-555-0124","jondoe2@mail.net",400
+mail3@mail.com,"4th Av.",13123,"10005","NY","US","NY","Jon","Doe","+1-202-555-0124","jondoe3@mail.net",400
+mail4@mail.com,"4th Av.","New York",6564,"NY","US","NY","Jon","Doe","+1-202-555-0124","jondoe4@mail.net",400
+mail5@mail.com,"4th Av.","New York","10005",4543,"US","NY","Jon","Doe","+1-202-555-0124","jondoe5@mail.net",400
+mail6@mail.com,"4th Av.","New York","10005","NY",1231,"NY","Jon","Doe","+1-202-555-0124","jondoe6@mail.net",400
+mail7@mail.com,"4th Av.","New York","10005","NY","US",234523,"Jon","Doe","+1-202-555-0124","jondoe7@mail.net",400
+mail8@mail.com,"4th Av.","New York","10005","NY","US","NY",23423,"Doe","+1-202-555-0124","jondoe8@mail.net",400
+mail9@mail.com,"4th Av.","New York","10005","NY","US","NY","Jon",453,"+1-202-555-0124","jondoe9@mail.net",400
+mail10@mail.com,"4th Av.","New York","10005","NY","US","NY","Jon","Doe",35345,"jondoe10@mail.net",400
+mail11@mail.com,"4th Av.","New York","10005","NY","US","NY","Jon","Doe","+1-202-555-0124",532324,400
+mail12@mail.com,"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv.","New York","10005","NY","US","NY","Jon","Doe","+1-202-555-0124","jondoe11@mail.net",200
+mail13@mail.com,"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv.","New York","10005","NY","US","NY","Jon","Doe","+1-202-555-0124","jondoe12@mail.net",400
+mail14@mail.com,"4th Av.","AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA","10005","NY","US","NY","Jon","Doe","+1-202-555-0124","jondoe13@mail.net",200
+mail15@mail.com,"4th Av.","AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA","10005","NY","US","NY","Jon","Doe","+1-202-555-0124","jondoe14@mail.net",400
+mail16@mail.com,"4th Av.","New York","99999999999999999999","NY","US","NY","Jon","Doe","+1-202-555-0124","jondoe15@mail.net",200
+mail17@mail.com,"4th Av.","New York","999999999999999999999","NY","US","NY","Jon","Doe","+1-202-555-0124","jondoe16@mail.net",400
+mail18@mail.com,"4th Av.","New York","10005","AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA","US","NY","Jon","Doe","+1-202-555-0124","jondoe17@mail.net",200
+mail19@mail.com,"4th Av.","New York","10005","AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA","US","NY","Jon","Doe","+1-202-555-0124","jondoe18@mail.net",400
+mail20@mail.com,"4th Av.","New York","10005","NY","US","NY","AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA","Doe","+1-202-555-0124","jondoe19@mail.net",200
+mail21@mail.com,"4th Av.","New York","10005","NY","US","NY","AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA","Doe","+1-202-555-0124","jondoe20@mail.net",400
+mail22@mail.com,"4th Av.","New York","10005","NY","US","NY","Jon","AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA","+1-202-555-0124","jondoe21@mail.net",200
+mail23@mail.com,"4th Av.","New York","10005","NY","US","NY","Jon","AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA","+1-202-555-0124","jondoe22@mail.net",400
+mail24@mail.com,"4th Av.","New York","10005","NY","US","NY","Jon","Doe","99999999999999999999999999999999","jondoe23@mail.net",200
+mail25@mail.com,"4th Av.","New York","10005","NY","US","NY","Jon","Doe","999999999999999999999999999999999","jondoe24@mail.net",400
+mail26@mail.com,"4th Av.","New York","10005","NY","US","NY","Jon","Doe","+1-202-555-0124","AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",200
+mail27@mail.com,"4th Av.","New York","10005","NY","US","NY","Jon","Doe","+1-202-555-0124","AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",400
+mail28@mail.com,"","New York","10005","NY","US","NY","Jon","Doe","+1-202-555-0124","jondoe1@mail.net",400
+mail29@mail.com,"A","New York","10005","NY","US","NY","Jon","Doe","+1-202-555-0124","jondoe1@mail.net",200
+mail30@mail.com,"4th Av.","","10005","NY","US","NY","Jon","Doe","+1-202-555-0124","jondoe1@mail.net",400
+mail31@mail.com,"4th Av.","A","10005","NY","US","NY","Jon","Doe","+1-202-555-0124","jondoe1@mail.net",200
+mail32@mail.com,"4th Av.","New York","","NY","US","NY","Jon","Doe","+1-202-555-0124","jondoe1@mail.net",400
+mail33@mail.com,"4th Av.","New York","0","NY","US","NY","Jon","Doe","+1-202-555-0124","jondoe1@mail.net",200
+mail34@mail.com,"4th Av.","New York","10005","","US","NY","Jon","Doe","+1-202-555-0124","jondoe1@mail.net",400
+mail35@mail.com,"4th Av.","New York","10005","A","US","NY","Jon","Doe","+1-202-555-0124","jondoe1@mail.net",200
+mail36@mail.com,"4th Av.","New York","10005","NY","US","NY","","Doe","+1-202-555-0124","jondoe1@mail.net",400
+mail37@mail.com,"4th Av.","New York","10005","NY","US","NY","A","Doe","+1-202-555-0124","jondoe1@mail.net",200
+mail38@mail.com,"4th Av.","New York","10005","NY","US","NY","Jon","","+1-202-555-0124","jondoe1@mail.net",400
+mail39@mail.com,"4th Av.","New York","10005","NY","US","NY","Jon","A","+1-202-555-0124","jondoe1@mail.net",200
+mail40@mail.com,"4th Av.","New York","10005","NY","US","NY","Jon","Doe","","jondoe1@mail.net",400
+mail41@mail.com,"4th Av.","New York","10005","NY","US","NY","Jon","Doe","0","jondoe1@mail.net",200
+mail42@mail.com,"4th Av.","New York","10005","NY","US","NY","Jon","Doe","+1-202-555-0124","",400
+mail43@mail.com,"4th Av.","New York","10005","NY","US","NY","Jon","Doe","+1-202-555-0124","b",200
