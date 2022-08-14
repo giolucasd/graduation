@@ -8,7 +8,7 @@ Subjects:
 
 * MC348: Programming Paradigms;
 * MC536: Databases: Theory and Practice;
-* MC558: Algorithm Design and Analysis II;
+* MC558: Graph Theory and Algorithms;
 * MC613: Digital Circuits Laboratory;
 * MC646: Software Testing;
 * MC833: Network Programming;
