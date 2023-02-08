@@ -1,8 +1,6 @@
-insertionSort :: Ord a => [a] -> [a]
-insertionSort [] = []
-insertionSort [x] = [x]
-insertionSort (x:xs) = insert $ insertionSort xs
-    where insert [] = [x]
-          insert (y:ys)
-              | x < y = x : y : ys
-              | otherwise = y : insert ys
+import Data.List (minimum, delete)
+
+ssort :: Ord t => [t] -> [t]
+ssort [] = []
+ssort xs = let { x = minimum xs } 
+           in  x : ssort (delete x xs)
